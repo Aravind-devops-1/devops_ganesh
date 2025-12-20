@@ -52,8 +52,8 @@ We **welcome contributions**! If you are passionate about Kubernetes, DevOps, or
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/k8s-learning-path.git
-cd k8s-learning-path
+git clone https://github.com/arira-ai/ar_k8s.git
+cd ar_k8s
 ```
 ##  Note
 
