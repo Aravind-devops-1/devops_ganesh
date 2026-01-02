@@ -1,4 +1,3 @@
-````md
 # 04 – Deployment Fundamentals in Kubernetes
 
 ## 1. What Is a Deployment?
@@ -279,3 +278,4 @@ If you want, next I can add:
 
 Just tell me, **Jhon Wick** 👊
 ```
+
