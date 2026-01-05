@@ -1,10 +1,24 @@
+
 <div align="center">
 
-#  Kubernetes Orchestrating Applications at Scale
+<img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png" width="120" style="margin-bottom: 20px;">
 
-<img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png" width="200">
+# Kubernetes
+### Orchestrating Applications at Scale
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![K8s Version](https://img.shields.io/badge/Kubernetes-1.30+-blue.svg?style=flat-square&logo=kubernetes)](https://kubernetes.io/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+---
+
+**Master the art of cloud-native orchestration. Built for the next generation of DevOps engineers.**
+
+[Explore Labs](#-getting-started) • [View Modules](#-what-you-will-learn) • [Contribute](#-collaboration)
 
 </div>
+
+<br/>
 
 ##  Why This Repo?
 
