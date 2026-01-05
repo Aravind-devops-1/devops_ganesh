@@ -1,8 +1,10 @@
-# <img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png" width="80" alt="Kubernetes Logo"> Kubernetes Learning Path
+<div align="center">
 
-Welcome to the **Kubernetes Learning Path Repo** – your **complete guide from zero to hero** in Kubernetes! 
+#  Kubernetes Orchestrating Applications at Scale
 
+<img src="https://raw.githubusercontent.com/kubernetes/kubernetes/master/logo/logo.png" width="200">
 
+</div>
 
 ##  Why This Repo?
 
