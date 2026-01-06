@@ -9,16 +9,13 @@ This guide demonstrates the **Self-Healing** capabilities of Kubernetes. In this
 * **The Problem:** In traditional setups, if a server crashes at 2:00 AM, the app stays down until an engineer fixes it.
 * **The Solution:** Kubernetes monitors the cluster 24/7. If a Pod is deleted or a process crashes, the **Deployment Controller** immediately creates a replacement.
 
----
 
-## 🛠 Core Concepts to Cover
+##  Core Concepts to Cover
 
 1. **Desired vs. Actual State:** How K8s reconciles differences.
 2. **Automatic Rescheduling:** What happens when a Pod is manually killed.
 
----
-
-## 📊 Visual Architecture
+##  Visual Architecture
 
 The "Control Loop" (Watch, Diff, Act) that drives self-healing.
 
@@ -32,10 +29,8 @@ graph TD
 
 ```
 3. Probes
-   
----
 
-## 📄 Hands-on Example: The Self-Healing Manifest
+##  Hands-on Example: The Self-Healing Manifest
 
 Create a file named `self-healing-demo.yaml`. This deployment uses an Nginx image and defines 3 replicas.
 
@@ -63,10 +58,7 @@ spec:
         - containerPort: 80
 
 ```
-
----
-
-## 💻 Cheat Sheet: Lab Steps
+##  Cheat Sheet: Lab Steps
 
 | Step | Command | What it proves |
 | --- | --- | --- |
@@ -78,13 +70,9 @@ spec:
 
 ---
 
-## 🚀 Best Practices for Self-Healing
+##  Best Practices for Self-Healing
 
 1. **Use Liveness Probes:** Don't just check if the container is "running"; check if the app inside is actually responding to requests.
 2. **Avoid `RestartPolicy: Never`:** For production workloads, ensure the restart policy is set to `Always` (default for Deployments).
 3. **Resource Requests:** Always set CPU/Memory requests so Kubernetes can find a node with enough "room" to heal the pod onto.
 4. **Multi-AZ Clusters:** Distribute pods across multiple zones so that if a whole data center fails, Kubernetes heals the pods in a different zone.
-
----
-
-**Next Step:** Would you like me to provide a **Liveness Probe YAML** snippet to show how to handle "zombie" containers (processes that are running but frozen)?
