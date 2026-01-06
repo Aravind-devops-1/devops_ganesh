@@ -1,4 +1,4 @@
-# 1️. basic-deployment-failed-probes.yaml
+# 1️. Basic-deployment-failed-probes.yaml
 
 **Liveness & Readiness probes FAIL**
 
@@ -34,7 +34,7 @@ spec:
         # Liveness Probe (FAILS)
         livenessProbe:
           httpGet:
-            path: /healthz   # ❌ This endpoint does NOT exist
+            path: /healthz   #  This endpoint does NOT exist
             port: 80
           initialDelaySeconds: 10
           periodSeconds: 5
@@ -43,7 +43,7 @@ spec:
         # Readiness Probe (FAILS)
         readinessProbe:
           httpGet:
-            path: /ready     # ❌ This endpoint does NOT exist
+            path: /ready     #  This endpoint does NOT exist
             port: 80
           initialDelaySeconds: 5
           periodSeconds: 5
@@ -131,8 +131,6 @@ kubectl describe pod <pod-name>
 kubectl get pods
 ```
 
----
-
 # Key Learning (Very Important)
 
 | Probe Type | Failure Result           |
@@ -143,7 +141,7 @@ kubectl get pods
 
 > **Running container ≠ healthy application**
 
----
+
 
 # CKA / CKAD Exam Tip
 
