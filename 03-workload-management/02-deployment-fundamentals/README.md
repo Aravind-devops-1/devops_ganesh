@@ -58,7 +58,7 @@ flowchart TD
     B --> E[Pod 3]
 ````
 
-> ⚠️ You **never manage ReplicaSets or Pods directly** when using Deployments.
+> You **never manage ReplicaSets or Pods directly** when using Deployments.
 
 ---
 
@@ -217,11 +217,11 @@ kubectl delete deployment <name>
 
 ## 13. Common Mistakes (Beginner → Production)
 
-* ❌ Managing Pods directly instead of Deployment
-* ❌ Missing or incorrect `selector`
-* ❌ Using `latest` image tag
-* ❌ No resource requests/limits
-* ❌ No probes
+*  Managing Pods directly instead of Deployment
+*  Missing or incorrect `selector`
+*  Using `latest` image tag
+*  No resource requests/limits
+*  No probes
 
 ---
 
@@ -269,13 +269,3 @@ Recommended next topics:
 ---
 
 ```
-
-If you want, next I can add:
-- 🔥 **Deployment rolling update failure demo**
-- 📉 **CrashLoopBackOff troubleshooting**
-- 🎓 **CKA/CKAD Deployment exam questions**
-- 🧪 **Blue-Green & Canary deployments in K8s**
-
-Just tell me, **Jhon Wick** 👊
-```
-
