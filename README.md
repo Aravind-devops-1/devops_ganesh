@@ -20,6 +20,71 @@
 
 <br/>
 
+## Overivew of the k8s
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#a1cbbeff', 'primaryTextColor': '#333', 'primaryBorderColor': '#333', 'lineColor': '#aba0a0ff' }}}%%
+mindmap
+  root((Kubernetes Core))
+    Architecture
+      Control Plane
+        "API Server"
+        "etcd Store"
+        "Scheduler"
+        "Controller Manager"
+      Node Components
+        "Kubelet"
+        "Kube-Proxy"
+        "Container Runtime"
+    
+    Workloads
+      Pods
+        "Smallest Unit"
+        "Shared Network/Storage"
+      Controllers
+        "Deployments Stateless"
+        "StatefulSets Database"
+        "DaemonSets Node-wide"
+        "Jobs / CronJobs"
+    
+    Networking
+      Service Types
+        "ClusterIP Internal"
+        "NodePort Static Port"
+        "LoadBalancer External"
+      Ingress
+        "HTTP/S Routing"
+      Network Policies
+        "Pod Firewalls"
+
+    Storage
+      Volumes
+        "emptyDir Temp"
+        "hostPath Node-local"
+      Persistence
+        "PersistentVolume PV"
+        "PersistentVolumeClaim PVC"
+        "StorageClass Dynamic"
+
+    Configuration
+      ConfigMaps
+        "Plain-text config"
+      Secrets
+        "Encoded sensitive data"
+      Resources
+        "Requests Minimum"
+        "Limits Maximum"
+
+    Maintenance
+      Troubleshooting
+        "kubectl logs"
+        "kubectl describe"
+        "kubectl get events"
+      Operations
+        "RollingUpdate"
+        "Rollback"
+        "Scaling"
+```
+
 ##  Why This Repo?
 
 Kubernetes is the **industry-standard container orchestration platform** used by organizations worldwide.  
