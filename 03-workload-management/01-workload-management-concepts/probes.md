@@ -23,6 +23,12 @@ With probes:
 
 * Detects **dead or stuck applications**
 * If it fails → **Pod is restarted**
+  
+  **Types of Liveness Probes**
+   1. HTTP
+   2. TCP
+   3. EXEC
+  
 
 ### 2. Readiness Probe (Traffic Control)
 
