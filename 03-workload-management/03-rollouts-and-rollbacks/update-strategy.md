@@ -14,6 +14,7 @@ An **update strategy** defines:
 * How traffic is handled during upgrades
 
 > **Wrong strategy = downtime**
+
 > **Correct strategy = seamless user experience**
 
 ## 2. Types of Update Strategies in Kubernetes
@@ -392,3 +393,4 @@ Mastering update strategies means:
 * Fewer outages
 * Faster recovery
 * Higher confidence releases
+
