@@ -2,7 +2,10 @@
 
 ## Overview
 
-In Kubernetes, **rollouts and rollbacks** are mechanisms that allow you to **safely deploy new versions of applications** and **revert to a previous stable version** if something goes wrong.
+In Kubernetes, **rollouts and rollbacks** are mechanisms that allow you to 
+* **safely deploy new versions of applications**
+**&&**
+* **revert to a previous stable version** --> if something goes wrong.
 
 This capability is **critical in production** to ensure:
 
@@ -280,3 +283,4 @@ kubectl describe deployment <name>
 ## One-Line DevOps Summary
 
 > **Rollouts move you forward safely. Rollbacks save you when things break. Kubernetes gives you both.** 
+
